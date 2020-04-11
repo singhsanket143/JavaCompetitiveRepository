@@ -1,4 +1,4 @@
-package Leetcode.DynamicProgramming;
+package Leetcode;
 import java.util.*;
 public class Triangle {
     public int minimumTotal(List<List<Integer>> triangle) {
