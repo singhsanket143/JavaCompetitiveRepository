@@ -3,6 +3,7 @@ package Leetcode;
 import java.util.Arrays;
 
 public class PartitionToKEqualSumSubsets {
+    // https://leetcode.com/problems/partition-to-k-equal-sum-subsets/
     public boolean canPartitionKSubsets(int[] nums, int k) {
         int n = nums.length;
         int sum = Arrays.stream(nums).sum();
