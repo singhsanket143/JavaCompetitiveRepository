@@ -1,4 +1,4 @@
-package Leetcode;
+package Leetcode.DynamicProgramming;
 
 public class BestTimeToBuyAndSellStock1 {
     public int maxProfit(int[] prices) {
