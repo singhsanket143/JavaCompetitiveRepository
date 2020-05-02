@@ -12,12 +12,13 @@ public class PalindromePartiotioning2 {
         for(int len = 2; len <= n; len++) {
             for(int i = 0; i <= n - len; i++) {
                 int j = i + len - 1;
+                boolean compare = s.charAt(i) == s.charAt(j);
                 if(len == 2) {
-                    isPalindrome[i][j] = (s.charAt(i) == s.charAt(j));
+                    isPalindrome[i][j] = compare;
                 } else {
-                    isPalindrome[i][j] = (s.charAt(i) == s.charAt(j)) && isPalindrome[i+1][j-1];
+                    isPalindrome[i][j] = compare && isPalindrome[i+1][j-1];
                 }
-                if(isPalindrome[i][j] == true) {
+                if(isPalindrome[i][j]) {
                     dp[i][j] = 0;
                 } else {
                     dp[i][j] = Integer.MAX_VALUE;
